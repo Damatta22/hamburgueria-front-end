@@ -4,12 +4,16 @@ import Background from "../assets/fundo de hamburgueria.png"
 export const Container = styled.div`
     height:100vh;
     width: 100vw;
-    background:url('${Background }');
+    background:url('${Background}');
     display:flex;
     justify-content:center;
     align-items:center;
     
 `
+
+
+
+
 export const ImagemFrontal = styled.img`
     height:90%;
 
@@ -24,6 +28,7 @@ export const ContainerItens = styled.div`
     flex-direction: column;
     justify-content: center;
 
+   
     form {
         display:flex;
         flex-direction:column;
@@ -37,7 +42,7 @@ export const ContainerItens = styled.div`
 
         color: #ffffff;
         text-align: center;
-        margin-top:100px;
+        margin-top:10px;
     }
 `
 export const Label = styled.p`
@@ -58,7 +63,7 @@ export const Input = styled.input`
         background: #ffffff;
         box-shadow: 3px 3px 10px rgba(74, 144, 226, 0.19);
         border-radius: 5px;
-        border: ${props=>(props.error ? '2px solid #CC1717':'none')};
+        border: ${props => (props.error ? '2px solid #CC1717' : 'none')};
         padding-left: 10px;
 
     
@@ -78,7 +83,7 @@ export const Button = styled.button`
         line-height: 19px;
         text-align: center;
         color: #eeeeee;
-        margin-top: 50px;
+        margin-top: 30px;
         margin-bottom: 25px;
 
 
@@ -95,7 +100,7 @@ export const Button = styled.button`
 
     
 `
-export const SignInLink  = styled.p`
+export const SignInLink = styled.p`
          font-style:normal;
         font-weight: 300;
         font-size: 14px;
