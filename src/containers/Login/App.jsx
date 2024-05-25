@@ -4,12 +4,12 @@ import { useForm } from 'react-hook-form'
 import * as Yup from "yup";
 import { yupResolver } from '@hookform/resolvers/yup'
 
-import LoginImg from '../../assets/login-image.svg'
+
 import Logo from '../../assets/rect43719.png'
 
 import {
   Container,
-  ImagemFrontal,
+
   ContainerItens,
   Input,
   Button,
@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <Container>
-        <ImagemFrontal src={LoginImg} alt='Login-Image' />
+     
         <ContainerItens>
           <img src={Logo} alt='logo' />
 

@@ -1,13 +1,15 @@
 import styled from "styled-components";
-import Background from "../../assets/fundo de hamburgueria.png";
+import Background from "../../assets/burgerback.jpg";
 
 export const Container = styled.div`
   height: 100vh;
   width: 100vw;
-  background: url("${Background}");
+ background: url("${Background}");
+  
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+
 `;
 
 export const ImagemFrontal = styled.img`
@@ -15,12 +17,14 @@ export const ImagemFrontal = styled.img`
 `;
 export const ContainerItens = styled.div`
   background: #373737;
-  height: 90%;
-  border-radius: 0 10px 10px 0;
-  padding: 25px 75px;
+  height: 95%;
+  border-radius:10px;
+  padding: 25px 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-right:5%;
+  opacity: 0.8;
+
 
   form {
     display: flex;
@@ -37,6 +41,9 @@ export const ContainerItens = styled.div`
     text-align: center;
     margin-top: 10px;
   }
+
+
+
 `;
 export const Label = styled.p`
   font-style: normal;
